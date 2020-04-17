@@ -57,6 +57,7 @@ h1{
 
 .logo img{
 	width: 100px;
+	max-width: 100px;
 }
 
 /*hero section styles*/
