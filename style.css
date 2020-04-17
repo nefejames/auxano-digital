@@ -1,0 +1,250 @@
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+/*general styles*/
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3{
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	/*padding: 1rem 0 .2em;*/
+}
+
+p{
+	font-size: 1.2rem;
+	line-height: 1.5
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	
+}
+
+a.btn{
+	font-size: .8rem;
+	padding: .7rem 1rem;
+	background: black;
+	border-radius: 5px;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	display: inline-block;
+} 
+
+li{
+	list-style: none;
+}
+
+.container{
+	padding: 2rem 1rem;
+}
+
+/*header section styles*/
+header{
+	background: #F7F7F7;
+}
+
+h1{
+	display: flex;
+	padding-left: 1rem;
+}
+
+.logo img{
+	width: 100px;
+}
+
+/*hero section styles*/
+.hero-section{
+	text-align: center;
+}
+
+.hero-section .container{
+	padding: 3rem 1rem 3rem;
+
+}
+
+h2{
+	font-size: 2.1rem;
+	text-transform: capitalize;
+}
+
+.hero-texts, .project-details{
+	margin-bottom: 2rem;
+}
+
+/*.hero-section a{
+	margin-bottom: 4rem;
+}*/
+
+/*services section styles*/
+.services-section{
+	background: #F7F7F7;
+}
+
+.service-container{
+	background: white;
+	padding: 3rem 2rem;
+	box-shadow: 0 0 12px rgb(244, 244, 244);
+}
+
+.service-container:first-child{
+	margin-top: 0;
+}
+
+.service-container:last-child{
+	margin-bottom: 0;
+}
+
+/*project section styles*/
+.project-container, .service-container{
+	margin: 0 0 2rem;
+	text-align: center;
+	border-radius: 5px; 
+}
+
+.project-container{
+	padding: 3rem;
+	box-shadow: 0 0 12px rgb(244, 244, 244);
+}
+
+.project-container:last-child{
+	margin-bottom: 0;
+}
+
+
+/*footer section styles*/
+footer{
+	color: white;
+	background: #454545;
+}
+
+footer a, footer p, footer li{
+	font-size: 1.4rem;
+	text-transform: capitalize;
+}
+
+footer li{
+	line-height: 2rem;
+}
+
+footer .social, footer .contact-us{
+	padding: 1rem 0;
+} 
+
+.social-links{
+	display: flex;
+	width: 25%;
+	justify-content: space-between;
+}
+
+footer .container p.copyright{
+	text-align: center;
+	font-size: 1.2rem;
+	padding: 1rem 0;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width:760px)  {
+	h2{
+		font-size: 2.7rem;
+	}
+	h3{
+		font-size: 2rem;
+	}
+	p{
+		font-size: 1.6rem;
+	}
+
+	a.btn{
+		font-size: 1.2rem;
+	}
+		
+}
+
+/*header section mq*/
+@media screen and (min-width:760px) {
+	h1{
+		justify-content: center;
+	}
+
+}
+
+/*hero section mq*/
+@media screen and (min-width:760px)  {
+	.hero-section p{
+		padding: 1rem;
+	}
+
+	.hero-section .container{
+		padding: 4rem;
+	}
+
+	.hero-container{
+		width: 87%;
+		margin: 0 auto;
+	}
+
+	.service-container, .project-container{
+		width: 80%;
+		margin: .5rem auto 3rem;
+	
+	}
+	
+	
+}
+
+/*services section mq*/
+@media screen and (min-width: 760px) {
+	.services-section .container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.service-container{
+		flex-basis: 600px;
+	}
+
+	.service-container:nth-child(3){
+		margin-bottom: 0;
+	}
+}
+/*portfolio section mq*/
+@media screen and (min-width: 760px) {
+	.portfolio-section .container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.project-container{
+		padding: 4rem;
+		flex-basis: 600px;
+	}
+
+	.project-container:nth-child(3){
+		margin-bottom: 0;
+	}
+
+	.project-container h3{
+		padding: 0;
+	}
+}
+
+
+/*footer section mq*/
+@media screen and (min-width: 760px) {
+	footer .container{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.social-links{
+		width: 15%;
+	
+	}
+}
