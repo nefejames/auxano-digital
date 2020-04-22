@@ -28,14 +28,53 @@ a{
 }
 
 a.btn{
-	font-size: .8rem;
+	color: black;
+	font-size: 1rem;
 	padding: .7rem 1rem;
-	background: black;
-	border-radius: 5px;
+	background: transparent;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	display: inline-block;
-} 
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+a.btn.hero-cta{
+	color: white;
+	background: black;
+}
+
+a.btn:not(.hero-cta){
+	margin: .5rem 0;
+	transition: .3s background-color;
+	position: relative;
+	border: 2px solid black;
+	outline: none;
+}
+
+a.btn:not(.hero-cta):hover{
+	color: white;
+}
+
+a.btn:not(.hero-cta)::before{
+	content: "";
+	width: 40%;
+	opacity: 0;
+	background: black;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: 0.25s all;
+	
+}
+
+a.btn:not(.hero-cta):hover::before{
+	width: 100%;
+	z-index: -1;
+	opacity: 1;
+}
 
 li{
 	list-style: none;
@@ -147,7 +186,6 @@ footer .social, footer .contact-us{
 footer .container p.copyright{
 	text-align: center;
 	font-size: 1.2rem;
-	padding: 1rem 0;
 }
 
 /*MEDIA QUERIES*/
