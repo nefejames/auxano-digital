@@ -130,7 +130,7 @@ h2{
 .service-container{
 	background: white;
 	padding: 3rem 2rem;
-	box-shadow: 0 0 12px rgb(244, 244, 244);
+	box-shadow: 0 0 12px rgb(0,0,0,.2);
 }
 
 .service-container:first-child{
