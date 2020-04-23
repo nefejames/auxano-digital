@@ -54,12 +54,8 @@ h2{
 	margin-bottom: .8rem;
 }
 
-p{
-	color: #111111;
-}
-
 p, .contact-form label{
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	line-height: 1.5;
 }
 
@@ -178,12 +174,16 @@ footer a, footer p, footer li{
 	text-transform: capitalize;
 }
 
+footer a{
+	color: white;
+}
+
 footer li{
 	line-height: 2rem;
 }
 
 footer .social, footer .contact-us{
-	padding: 1rem 0;
+	margin: 1rem 0;
 } 
 
 .social-links{
@@ -209,7 +209,6 @@ footer .container p.copyright{
 /*main section styles*/
 @media screen and (min-width:760px)  {
 	main{
-		/* background: green; */
 		display: flex;
 		justify-content: space-between;
 	}
@@ -220,7 +219,6 @@ footer .container p.copyright{
 
 	main .contact-left{
 		width: 600px;
-		/* background: red; */
 	}
 
 	main .contact-right{
