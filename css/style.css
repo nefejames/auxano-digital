@@ -94,6 +94,10 @@ h1{
 	padding-left: 1rem;
 }
 
+h1 a{
+	display: flex;
+}
+
 .logo img{
 	width: 100px;
 	max-width: 100px;
