@@ -56,6 +56,8 @@ a.btn.hero-cta {
 }
 
 a.btn:not(.hero-cta) {
+	color: black;
+	font-size: 1.2rem;
 	margin: 0.5rem 0;
 	position: relative;
 	outline: none;
@@ -195,6 +197,7 @@ h1 a {
 footer {
 	color: white;
 	background: #454545;
+	background: #333996;
 }
 
 footer a,
@@ -222,7 +225,6 @@ footer .contact-us {
 }
 
 footer .container p.copyright {
-	text-align: center;
 	font-size: 1.2rem;
 }
 
