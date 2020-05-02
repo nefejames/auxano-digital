@@ -59,24 +59,42 @@ a.btn:not(.hero-cta) {
 	position: relative;
 	outline: none;
 	position: relative;
-	background: -webkit-linear-gradient(
+	/* background: -webkit-linear-gradient(
 		top,
 		transparent 0%,
 		transparent 60%,
 		#333996 60%,
 		#333996 100%
+	); */
+
+	background-image: linear-gradient(
+		transparent 0%,
+		transparent calc(50% - 9px),
+		#464764 calc(50% - 9px),
+		#464764 100%
 	);
+	background-size: 100% 200%;
+	background-position: 0px 0px;
+	transition: background-position 120ms ease-in-out 0s;
 }
 
 a.btn:not(.hero-cta):hover {
-	background: -webkit-linear-gradient(
+	/* background: -webkit-linear-gradient(
 		top,
 		transparent 0%,
 		transparent 0%,
 		#333996 0%,
 		#333996 100%
-	);
+	); */
 	color: white;
+
+	background-image: linear-gradient(
+		transparent 0%,
+		transparent calc(50% - 9px),
+		#464764 calc(50% - 9px),
+		#464764 100%
+	);
+	background-position: 0px 100%;
 }
 
 /* a.btn:not(.hero-cta)::before {
