@@ -53,15 +53,33 @@ a.btn.hero-cta {
 }
 
 a.btn:not(.hero-cta) {
-	color: black;
 	font-size: 1.2rem;
 	margin: 0.5rem 0;
+	padding: 0.2rem;
 	position: relative;
 	outline: none;
 	position: relative;
+	background: -webkit-linear-gradient(
+		top,
+		transparent 0%,
+		transparent 60%,
+		#333996 60%,
+		#333996 100%
+	);
 }
 
-a.btn:not(.hero-cta)::before {
+a.btn:not(.hero-cta):hover {
+	background: -webkit-linear-gradient(
+		top,
+		transparent 0%,
+		transparent 0%,
+		#333996 0%,
+		#333996 100%
+	);
+	color: white;
+}
+
+/* a.btn:not(.hero-cta)::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -76,7 +94,6 @@ a.btn:not(.hero-cta)::before {
 
 a.btn:not(.hero-cta):hover::before {
 	/* width: 100%; */
-}
 
 /* a.btn:not(.hero-cta):hover {
 	color: white;
