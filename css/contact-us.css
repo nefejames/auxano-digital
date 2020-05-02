@@ -55,6 +55,17 @@ footer {
 	padding: 2rem 1rem;
 }
 
+h2 {
+	/* font-size: 1.8rem;
+	margin-bottom: 0.8rem; */
+
+	line-height: 1.5;
+	color: #333996;
+	font-size: 2.1rem;
+	font-weight: 900;
+	margin-bottom: 1rem;
+}
+
 p,
 .contact-form label {
 	font-size: 1.2rem;
